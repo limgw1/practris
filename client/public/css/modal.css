@@ -1,0 +1,53 @@
+/* Only used in settings page */
+.modal{
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.6);
+}
+
+.modal-content{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: #333333;
+  margin: 10% auto;
+  padding: 2%;
+  width: 40%;
+}
+
+#actual-control-label, #actual-control-input, #actual-tuning-label, #actual-tuning-input{
+  display: grid;
+  grid-template-rows: auto;
+  row-gap: 1rem;
+}
+
+.control-input-button, #save-and-close-modal{
+  width: 100%;
+  background: #3d43b4;
+  padding: 0.5em 1em;
+  color: white;
+}
+
+.tuning-input-input{
+  display: block;
+  align-items: left;
+  width: 90%
+}
+
+.control-input-label{
+  grid-column: 1;
+}
+
+.control-input-div{
+  grid-column: 2;
+}
+
+#save-and-close-modal{
+  grid-column: 1/3;
+}
+

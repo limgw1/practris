@@ -1,0 +1,26 @@
+<h1>Settings HTML File</h1>
+<div class="tuning">
+  <h1>Current Tuning:</h1>
+  <ul id="tuning-list"></ul>
+  <button id="tuning-change" class="button" onclick="openTuningModal()">Change Tuning</button>
+  <div id="change-tuning-modal" class="modal">
+    <div id="controls-content" class="modal-content">
+      <p id="actual-tuning-label"></p>
+      <p id="actual-tuning-input"></p>
+      <button id="save-and-close-modal" class="button" onclick="saveAndCloseTuningModal()">Save and close</button>
+    </div>
+  </div>
+</div>
+<div class="controls">
+  <h1>Current Controls:</h1>
+  <ul id="control-list"></ul>
+  <button id="change-controls" class="button" onclick="openControlsModal()">Change Controls</button>
+  <div id="change-controls-modal" class="modal">
+    <div id="controls-content" class="modal-content">
+      <p id="actual-control-label"></p>
+      <p id="actual-control-input"></p>
+      <button id="save-and-close-modal" class="button" onclick="saveAndCloseControlsModal()">Save and close</button>
+    </div>
+  </div>
+</div>
+<script src="./js/settings.js"></script>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+  <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
+  {{#if game}}
+  <link rel="stylesheet" type="text/css" href="/css/game.css">
+  {{else}}
+  <link rel="stylesheet" type="text/css" href="/css/modal.css">
+  <link rel="stylesheet" type="text/css" href="/css/table.css">
+  {{/if}}
+  <title>Document</title>
+</head>
+<body>
+  <div class="navbar">
+  {{#if homepage}}
+  {{else}}
+    <a href="https://localhost:5000/"><h2>Home Page</h2></a>
+  {{/if}}
+    <a href="https://localhost:5000/secret">SECRET!</a>
+    <a href="https://localhost:5000/auth/google">Log In</a>
+    <a href="https://localhost:5000/auth/logout">Log Out</a>
+  </div>
+
+  {{{body}}}
+</body>
+</html>

@@ -1,0 +1,26 @@
+<h1>Sprint HTML file</h1>
+<div id="field">
+  <div class="player">
+    <div class="main-board">
+      <!-- Hold Queue -->
+      <canvas id="hold" width="80" height="80"></canvas>
+      <!-- Main Board -->
+      <canvas id="board" width="200" height="440"></canvas>
+      <!-- Piece Preview -->
+      <canvas id="queue" width="80" height="334"></canvas>
+    </div>
+    <div id="player-stats">
+      <h1 id="action-text">Press R to start.</h1>
+      <h2 id="time">Time: 0:00</h2>
+      <h2 id="pps">PPS: 0.00</h2>
+      <h2 id="piece-count">Piece: 0</h2>
+    </div>
+  </div>
+</div>
+<script src="./js/core-game-mechanics/requests.js"></script>
+<script src="./js/core-game-mechanics/presets.js"></script>
+<script src="./js/core-game-mechanics/piece.js"></script>
+<script src="./js/core-game-mechanics/holdmodel.js"></script>
+<script src="./js/core-game-mechanics/queuemodel.js"></script>
+<script src="./js/core-game-mechanics/corefunctionality.js"></script>
+<script src="./js/gamemode-scripts/sprint.js"></script>

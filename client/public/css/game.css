@@ -1,0 +1,44 @@
+#field{
+  padding: 0% 10%;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.player{
+  /* border-style: solid;
+  border-color: #404040;
+  border-width: 0px 10px 0px 0px; */
+  grid-column: 1;
+  padding: 0% 5%;
+  width: 50%;
+}
+
+.main-board{
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+}
+
+#hold{
+  float: right;
+  padding-top: 40px;
+  grid-column: 1;
+  grid-row: 0
+}
+#board{
+  border-style: solid;
+  border-color: grey;
+  border-width: 0px 2px 2px 2px;
+  grid-column: 2/4;
+  grid-row: 1/6
+}
+#queue{
+  padding-top: 40px;
+  grid-column: 4;
+  grid-row: 1/6
+}
+
+#player-stats{
+  text-align: center;
+}

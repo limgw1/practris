@@ -1,0 +1,36 @@
+/* Used in all pages */
+h1{
+  text-align: center;
+}
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: black;
+  color:white
+}
+
+.warning{
+  color:red
+}
+
+.grid{
+  margin: auto;
+  display: grid;
+  justify-items: center;
+  width: 60%;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+}
+
+.main-menu{
+  display: inline-block;
+  width: 100%;
+
+}
+.main-menu-button{
+  font-size: xx-large;
+  width: 100%;
+  background: #3d43b4;
+  padding: 0.5em 1em;
+  color: white;
+}
